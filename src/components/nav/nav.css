@@ -1,0 +1,35 @@
+.navStyle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 0.8rem;
+    box-shadow: 1px 1px 2px 2px #808080;
+    height: 5rem;
+    /* position: fixed;
+    width: 100%;
+    z-index: 1; */
+}
+
+.navList{
+    list-style-type: none;
+}
+
+.navLink{
+    text-decoration: none;
+    float: left;
+    margin-right: 3rem;
+    color: #808080;
+}
+
+.navLink:hover{
+    border-bottom: 3px solid #808080;
+    color: #808080;
+}
+
+.logoName h1{
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}

@@ -1,0 +1,27 @@
+.shoppingNav{
+    display: flex;
+    list-style-type: none;
+    column-gap: 2rem;
+    justify-content: center;
+    font-weight: bold;
+    color: #808080;
+}
+
+.browseBtn{
+    border: none;
+    outline: none;
+    width: 9rem;
+    padding: 7px;
+    background:#ffffff;
+    color: #2e2e2e;
+    border: 1px solid #2e2e2e;   
+}
+
+.trackPara{
+    width: 40ch;
+}
+
+.shoppingNav a{
+ text-decoration: none;
+ color: #808080;
+}

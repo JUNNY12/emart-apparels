@@ -1,0 +1,36 @@
+.submitContactBtn{
+    border: none;
+    outline: none;
+    width: 9rem;
+    padding: 9px;
+    background: #2e2e2e;
+    color: #ffffff;
+}
+
+.submitContactBtn:hover{
+    background: #4d4a4a;
+}
+
+.contactImage{
+    width: 30rem;
+    height: 32rem;
+    object-fit: cover;
+}
+
+.contactImage>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.formInput{
+    background: #b5abab;
+    border-radius: 0px;
+}
+
+.formInput:focus{
+    border: none;
+    outline: none;
+    background: #b5abab;
+    box-shadow: 1px 1px 1px 1px #2e2e2e;
+}

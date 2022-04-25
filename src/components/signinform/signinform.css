@@ -1,0 +1,20 @@
+.signInBtn{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    background: #2e2e2e;
+    color: #ffffffff;
+}
+
+.signInput{
+    background: #b5abab;
+    border-radius: 0px;
+}
+
+.signInput:focus{
+    border: none;
+    outline: none;
+    background: #b5abab;
+    box-shadow: 1px 1px 1px 1px #2e2e2e;
+}

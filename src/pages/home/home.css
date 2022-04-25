@@ -1,0 +1,86 @@
+.viewMore {
+    padding: 8px;
+    border: none;
+    outline: none;
+    background: #2e2e2e;
+    width: 9rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.exploreWrapper {
+
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    padding: 2rem;
+}
+
+.galleryContainer {
+    width: 20rem;
+    height: 23rem;
+    object-fit: cover;
+    padding: 2rem;
+}
+
+.exploreWrapper>img,
+.galleryContainer>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.exploreImageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.btnWrapper {
+    position: absolute;
+    left: 35%;
+    bottom: 5%;
+
+}
+
+.btnExplore {
+    border: none;
+    outline: none;
+    width: 9rem;
+    padding: 7px;
+    background: #2e2e2e;
+    color: #ffffff;
+}
+
+.storyText {
+    width: 45ch;
+}
+
+.btnDiscover {
+    border: none;
+    outline: none;
+    width: 9rem;
+    padding: 7px;
+    background: #2e2e2e;
+    color: #ffffff;
+}
+
+.storyImage {
+    height: 30rem;
+    object-fit: cover;
+}
+
+.storyImage>img {
+    width: 100%;
+    height: 100%;
+}
+
+.galleryWrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}

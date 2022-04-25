@@ -1,0 +1,46 @@
+footer{
+    background: #2E2E2E;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.footerHeader{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.faqLink{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.faqLink:hover{
+    color: #ffffff;
+}
+
+.subscribeBtn{
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: #2e2e2e;
+    width: 9rem;
+    background: #ffffff;
+    border: 1px solid #2e2e2e;
+    font-weight: bold;
+}
+
+.subscribeInput:focus{
+  box-shadow: 1px 1px 2px 2px #808080;
+  outline: #2E2E2E;
+  border: none;
+}
+
+.footerIconWrapper{
+    display: flex;
+    column-gap: 1.5em;
+}
+
+.footerIcon{
+    font-size: 2rem;
+    cursor: pointer;
+}

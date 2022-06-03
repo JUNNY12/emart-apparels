@@ -9,19 +9,7 @@
 }
 
 .exploreWrapper {
-
-    position: relative;
-    width: 25rem;
-    height: 25rem;
-    object-fit: cover;
-    padding: 2rem;
-}
-
-.galleryContainer {
-    width: 20rem;
-    height: 23rem;
-    object-fit: cover;
-    padding: 2rem;
+    position: relative;   
 }
 
 .exploreWrapper>img,
@@ -32,10 +20,10 @@
 
 
 .exploreImageContainer {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 2rem;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  place-items: center;
 }
 
 .btnWrapper {
@@ -54,9 +42,6 @@
     color: #ffffff;
 }
 
-.storyText {
-    width: 45ch;
-}
 
 .btnDiscover {
     border: none;
@@ -68,7 +53,6 @@
 }
 
 .storyImage {
-    height: 30rem;
     object-fit: cover;
 }
 
@@ -76,11 +60,24 @@
     width: 100%;
     height: 100%;
 }
+.storySection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    column-gap:2rem ;
+}
 
 .galleryWrapper {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   column-gap: 2rem;
+}
+
+@media screen and (max-width:768px){
+    .exploreImageContainer,
+    .storySection,
+    .galleryWrapper{
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
 }

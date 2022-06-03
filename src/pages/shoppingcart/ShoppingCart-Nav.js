@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 
 
@@ -8,32 +8,33 @@ const ShoppingCartNav = () => {
         <div className="mt-5">
             <nav >
                 <ul className="shoppingNav">
-                    <a href="/trackorders">
+                    <Link to="/trackorders">
                         <li className="text-center">
-                            <div><i class="fa-solid fa-truck"></i></div>
-                            <div>Track Orders</div>
+                            <div className="shoppingIcon"><i class="fa-solid fa-truck"></i></div>
+                            <div className="hideText">Track Orders</div>
                         </li>
-                    </a>
+                    </Link>
 
-                    <a href="/favorite">
+                    <Link to="/favorite">
                         <li className="text-center">
-                            <div><i class="fa-solid fa-heart"></i></div>
-                            <div>Favorite</div>
+                            <div className="shoppingIcon"><i class="fa-solid fa-heart"></i></div>
+                            <div className="hideText">Favorite</div>
                         </li>
-                    </a>
+                    </Link>
 
-                   <a href="/cart">
+                   <Link to="/cart">
                        <li className="text-center">
-                            <div><i class="fa-solid fa-cart-shopping"></i></div>
-                            <div> Shopping Cart</div>
+                            <div className="shoppingIcon"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <div className="hideText"> Shopping Cart</div>
                         </li>
-                   </a>
-                    <a href="/signin">
+                   </Link>
+
+                    <Link to="/signin">
                         <li className="text-center">
-                            <div><i class="fa-solid fa-user"></i></div>
-                            <div>Sign In</div>
+                            <div className="shoppingIcon"><i class="fa-solid fa-user"></i></div>
+                            <div className="hideText">Sign In</div>
                         </li>
-                    </a>
+                    </Link>
                 </ul>
             </nav>
 

@@ -8,7 +8,7 @@ const AboutHeader = () => {
                  Quality over quantity
             </h1>
 
-            <h5 className="aboutHeader">
+            <h5 className="aboutHeader pt-0 px-5">
                  Quality has become a habit for us.
                  It's not simply something we aspire towards; 
                  we live by it every day.

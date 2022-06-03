@@ -14,10 +14,10 @@ const FeatureProducts = () => {
         <div>
 
             <div>
-                <h1 className="text-center">Featured Product</h1>
+                <h1 className="text-center mb-3">Featured Product</h1>
             </div>
 
-            <div className="featuredProductContainer">
+            <div className="featuredProductContainer px-5 pb-5">
                 {ProductItem}
             </div>
 

@@ -1,8 +1,19 @@
 import "./nav.css"
 
+import { useState } from "react"
+
 
 
 const Nav = () => {
+
+    const [isOpen, setIsOpen] = useState(true)
+
+
+
+    const toggleNavBar = () => {
+        setIsOpen(prevState => !prevState)
+    }
+
     return (
         <div>
             <nav className="navStyle">
@@ -10,7 +21,7 @@ const Nav = () => {
                     <h1>Emart-Apparels</h1>
                 </div>
 
-                <ul className="navList">
+                <ul className={isOpen? "navList" : "showNav"}>
                     <a href="/" className="navLink">
                         <li>HOME</li>
                     </a>
@@ -40,6 +51,10 @@ const Nav = () => {
                     </a>
 
                 </ul>
+
+                <div className="menuIcon" onClick={toggleNavBar}>
+                     <i class="fa-solid fa-bars"></i>
+                </div>
             </nav>
         </div>
     )

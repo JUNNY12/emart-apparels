@@ -16,7 +16,7 @@ const ClothContent = () => {
 
     return(
         <div className="clothContent">
-            <div>
+            <div className="px-5">
                  <h1>Clothes</h1>
                 <h6 className="mb-3">Store / Clothes</h6>
 
@@ -26,7 +26,7 @@ const ClothContent = () => {
                 </p>
             </div>
                 
-            <div className="clothContainer">
+            <div className="clothContainer px-5 pt-3">
                 {clothItems}
             </div>
                   

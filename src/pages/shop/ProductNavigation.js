@@ -1,6 +1,7 @@
 import shoes from "./assets/shoes.jpg"
 import cloths from "./assets/cloths.jpg"
 import accessories from "./assets/accessories.jpg"
+import { Link } from "react-router-dom"
 
 
 const ProductNavigation = () => {
@@ -9,31 +10,35 @@ const ProductNavigation = () => {
     return(
         <div className="productNav">
             
-            <div className="productNavWrapper">
+            <div className="productNavWrapper mb-4">
                 <img src = {cloths}/>
-                <a href="/clothes">
+
+                <Link to="/clothes">
                     <button className="productBtn">
                         CLOTHES
                     </button>
-                </a>
+                </Link>
+    
             </div>
 
-            <div className="productNavWrapper">
+            <div className="productNavWrapper mb-4">
                 <img src = {shoes}/>
-                <a href="/shoes">
+                <Link to="/shoes">
+                    
                     <button className="productBtn">
                         SHOES
                     </button>
-                </a>
+                
+                </Link>
             </div>
 
-            <div className="productNavWrapper">
+            <div className="productNavWrapper mb-4">
                 <img src = {accessories}/>
-               <a href="/accessories">
+               <Link to="/accessories">
                     <button className="productBtn">
                         ACCESSORIES
                     </button>
-               </a>
+               </Link>
             </div>
         </div>
     )

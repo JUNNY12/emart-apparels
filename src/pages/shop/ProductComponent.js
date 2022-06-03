@@ -5,8 +5,8 @@ import { Card } from "react-bootstrap";
 const ProductComponent= (props) => {
     return(
         <div className="productCard mb-4">
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={props.eachItem.image} />
+            <Card style={{ width: '' }}>
+                <Card.Img style={{height:'20rem'}} variant="top" src={props.eachItem.image} />
                 <Card.Body>
                     <Card.Title className="text-center">{props.eachItem.description}</Card.Title>
                     <Card.Text className="text-center fw-bold fs-4">

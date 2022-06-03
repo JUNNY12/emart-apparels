@@ -1,15 +1,12 @@
 .productNav{
-    display: flex;
-    column-gap: 2rem;
-    justify-content: center;
-    padding: 3rem 8rem 3rem 8rem;
-    flex-wrap: wrap;
-    cursor: pointer;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   column-gap: 2rem;
+   padding: 2rem;
+   place-items: center;
 }
 
 .productNavWrapper{
-    width: 20rem;
-    height: 15rem;
     object-fit: cover;
     position: relative;
 }
@@ -33,29 +30,49 @@
 }
 
 .featuredProductContainer{
-    display: flex;
-    column-gap: 2rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-    padding: 3rem;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 2rem;
 }
 
 .productCard{
     cursor: pointer;
 }
 
-.shoeContainer,
 .clothContainer,
+.shoeContainer,
 .accessoriesContainer{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 2rem;
- 
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 3rem;
 }
 
-.shoeContent,
-.clothContent,
-.accessoriesContent{
-   padding: 4rem;
-  
+
+@media screen and (max-width:768px) {
+    .productNav{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featuredProductContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clothContainer,
+    .shoeContainer,
+    .accessoriesContainer{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+   
+}
+
+@media screen and (max-width:560px) {
+    .featuredProductContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .clothContainer,
+    .shoeContainer,
+    .accessoriesContainer{
+        grid-template-columns: repeat(1 , 1fr);
+    }
 }

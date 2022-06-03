@@ -3,7 +3,7 @@
 
 const AboutParagraph = () => {
     return(
-        <div className="aboutPara">
+        <div className="aboutPara px-5 text-center mb-5">
             <div>
                 <p>
                     Our goal is to be a reliable and experienced 

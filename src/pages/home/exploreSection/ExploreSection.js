@@ -13,7 +13,7 @@ const Explore = () => {
     })
 
     return (
-        <div className="mb-5">
+        <div className="mb-3 px-5">
             <div className="text-center"> 
                 <h2>Explore All Your Needs</h2>
 

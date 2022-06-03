@@ -4,7 +4,7 @@ import storyImage from "./assets/storyImage.jpg"
 
 const AboutImage = () => {
     return(
-        <div className="aboutImage" >
+        <div className="aboutImage px-5 mb-5" >
             <div className="aboutWrapper">
                 <img src={cloth}/>
             </div>

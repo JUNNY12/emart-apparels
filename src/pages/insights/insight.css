@@ -2,10 +2,8 @@
 
 
 .insightImageWrapper{
-    width: 18rem;
-    height: 18rem;
     object-fit: cover;
-    margin-bottom: 2rem;
+    height: 18rem;
 }
 
 
@@ -15,16 +13,24 @@
 }
 
 .insightContainer{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 2rem;
-    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
 }
 
-@media all and (max-width:675px){
+.insightHeader{
+    padding-top: 6rem;
+}
+
+@media all and (max-width:768px){
     .insightContainer{
-        display: flex;
-        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width:560px){
+    .insightContainer{
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -1,5 +1,3 @@
-import Nav from "../../components/nav/Nav"
-import Footer from "../../components/footer/Footer"
 import AboutHeader from "./About-Header"
 import AboutParagraph from "./About-Paragraph"
 import AboutImage from "./About-Image"
@@ -13,10 +11,6 @@ const About = () => {
 
         <div>
             <div>
-                <Nav />
-            </div>
-
-            <div>
                 <AboutHeader />
             </div>
 
@@ -27,11 +21,6 @@ const About = () => {
             <div>
                 <AboutParagraph />
             </div>
-
-            <div>
-                <Footer />
-            </div>
-
         </div>
     )
 }

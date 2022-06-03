@@ -16,7 +16,7 @@ const AccessoriesContent = () => {
 
     return(
         <div className="accessoriesContent">
-            <div>
+            <div className="px-5 mb-3">
                  <h1>Clothes</h1>
                 <h6 className="mb-3">Store / Accessories</h6>
 
@@ -26,7 +26,7 @@ const AccessoriesContent = () => {
                 </p>
             </div>
                 
-            <div className="accessoriesContainer">
+            <div className="accessoriesContainer px-5">
                 {accessoriesItems}
             </div>
                   

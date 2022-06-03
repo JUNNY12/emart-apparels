@@ -25,3 +25,16 @@
  text-decoration: none;
  color: #808080;
 }
+
+.shoppingCartHeader{
+    padding-top: 6rem;
+}
+
+@media screen and (max-width:620px) {
+    .hideText{
+        display: none;
+    }
+    .shoppingIcon{
+        font-size: clamp(1.5rem, 3vw, 3rem);
+    }
+}

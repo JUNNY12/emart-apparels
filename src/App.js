@@ -14,6 +14,7 @@ import Shoes from "./pages/shop/Shoe";
 import Accessories from "./pages/shop/Accessories";
 import Clothes from "./pages/shop/Clothes";
 import SharedLayout from "./components/sharedLayout/SharedLayout";
+import SharedShopNav from "./components/sharedLayout/SharedShopNav";
 
 
 const App = () => {
@@ -25,20 +26,23 @@ const App = () => {
               <Route path="/" element={<SharedLayout />}>
 
                   <Route index element= {<Home />} />
-                  <Route path="shop" element ={<Shop />} />
+
+                  <Route path="shop" element={<SharedShopNav />}>
+                      <Route index element={<Shop />}/>
+                      <Route path="trackorders" element={<TrackOrders />} />
+                      <Route path="signin"  element={<SignIn />}/>
+                      <Route path="favorite" element={<Favorite />} />
+                      <Route path="cart" element={<ShoppingCart />} />
+                  </Route>
+  
                   <Route path="about" element = {<About />} />
                   <Route path ="insights" element ={<Insights />} />
-                  <Route path="contact" element ={<Contact />} />
-                  <Route path="cart" element={<ShoppingCart />} />
-                  <Route path="trackorders" element={<TrackOrders />} />
-                  <Route path="signin"  element={<SignIn />}/>
-                  <Route path="favorite" element={<Favorite />} />
+                  <Route path="contact" element ={<Contact />} />      
                   <Route path="shoes" element={<Shoes />} />
                   <Route path="accessories" element={<Accessories />} />
                   <Route path="clothes" element={<Clothes />} />
 
               </Route>
-
              
           </Routes>
         </BrowserRouter>

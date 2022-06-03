@@ -1,15 +1,8 @@
-import Nav from "../../components/nav/Nav"
-import Header from "./ShoppingCart-header"
-import Footer from "../../components/footer/Footer"
-
 import { Container, Row, Col } from "react-bootstrap"
-
 
 const Favorite = () => {
     return(
         <div>
-            <div><Nav /></div>
-            <div><Header /></div>
 
             <Container className="mb-5">
                 <Row>
@@ -26,14 +19,9 @@ const Favorite = () => {
                 </Row>
             </Container>
 
-            <div>
-                <Footer />
-            </div>
-
+           
         </div>
     )
 }
-
-
 
 export default Favorite

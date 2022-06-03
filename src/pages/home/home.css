@@ -28,8 +28,9 @@
 
 .btnWrapper {
     position: absolute;
-    left: 35%;
-    bottom: 5%;
+    left:50%;
+    bottom: -2.2rem;
+    transform: translate(-50%,-50%);
 
 }
 

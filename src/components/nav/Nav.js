@@ -1,17 +1,23 @@
 import "./nav.css"
-
+import { NavLink } from "react-router-dom"
 import { useState } from "react"
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
+
 
 
 
 const Nav = () => {
 
     const [isOpen, setIsOpen] = useState(true)
+    const {pathname} = useLocation()
 
+    useEffect(()=>{
+        setIsOpen(true)
+    }, [pathname])
 
-
-    const toggleNavBar = () => {
-        setIsOpen(prevState => !prevState)
+    const ToggleNavBar = () => {
+            setIsOpen(prevState => !prevState)
     }
 
     return (
@@ -22,37 +28,46 @@ const Nav = () => {
                 </div>
 
                 <ul className={isOpen? "navList" : "showNav"}>
-                    <a href="/" className="navLink">
-                        <li>HOME</li>
-                    </a>
-
-                    <a href="/shop" className="navLink">
-                        <li>SHOP</li>
-                    </a>
-
-                    <a href="/about" className="navLink">
-                        <li>ABOUT</li>
-                    </a>
-
-                    <a href="/insights" className="navLink">
-                        <li>INSIGHTS</li>
-                    </a>
-
-                    <a href="/contact" className="navLink">
-                        <li>CONTACT</li>
-                    </a>
-
-                    <a href="/cart" className="navLink">
-                        <li>
-                            <span className="me-1">SHOPPING CART</span>
-                            <span className="me-2"><i class="fa-solid fa-cart-shopping"></i></span>
-                            <span>(0)</span>
+                   
+                        <li className="navLink">
+                            <NavLink to="/" 
+                            className={({isActive}) => (isActive? "link active" : "link")} 
+                            >
+                            HOME
+                            </NavLink>
                         </li>
-                    </a>
+
+                        <li className="navLink">
+                            <NavLink to="/about" className="link">
+                                ABOUT
+                            </NavLink>
+                        </li>
+
+                        <li className="navLink">
+                            <NavLink to="/insights" className="link">
+                                INSIGHTS
+                            </NavLink>
+                        </li>
+
+                        <li className="navLink">
+                            <NavLink to="/contact" 
+                             className={({isActive}) => (isActive? "link active" : "link")}
+                            >
+                                CONTACT
+                            </NavLink>
+                        </li>
+                    
+                        <li className="navLink">
+                            <NavLink to="/shop"
+                            className={({isActive}) => (isActive? "link active" : "link")} 
+                            >
+                            SHOP
+                            </NavLink>
+                        </li>
 
                 </ul>
 
-                <div className="menuIcon" onClick={toggleNavBar}>
+                <div className="menuIcon" onClick={ToggleNavBar}>
                      <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>

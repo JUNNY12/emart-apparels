@@ -8,28 +8,31 @@ const ShoppingCartNav = () => {
         <div className="mt-5">
             <nav >
                 <ul className="shoppingNav">
-                    <Link to="/trackorders">
+                    <Link to="/shop/trackorders">
                         <li className="text-center">
                             <div className="shoppingIcon"><i class="fa-solid fa-truck"></i></div>
                             <div className="hideText">Track Orders</div>
                         </li>
                     </Link>
 
-                    <Link to="/favorite">
+                    <Link to="/shop/favorite">
                         <li className="text-center">
                             <div className="shoppingIcon"><i class="fa-solid fa-heart"></i></div>
                             <div className="hideText">Favorite</div>
                         </li>
                     </Link>
 
-                   <Link to="/cart">
+                   <Link to="/shop/cart">
                        <li className="text-center">
                             <div className="shoppingIcon"><i class="fa-solid fa-cart-shopping"></i></div>
-                            <div className="hideText"> Shopping Cart</div>
+                            <div className="hideText"> 
+                                <span> Shopping Cart</span>
+                                <span>(0)</span>
+                            </div>
                         </li>
                    </Link>
 
-                    <Link to="/signin">
+                    <Link to="/shop/signin">
                         <li className="text-center">
                             <div className="shoppingIcon"><i class="fa-solid fa-user"></i></div>
                             <div className="hideText">Sign In</div>

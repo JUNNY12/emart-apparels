@@ -13,6 +13,7 @@ const ClothContent = () => {
           item={item}
           />
       })
+      
 
     return(
         <div className="clothContent">

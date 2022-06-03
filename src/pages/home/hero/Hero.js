@@ -1,6 +1,7 @@
 import "./hero.css"
 import { Container,Row, Col } from "react-bootstrap"
 import heroImage from "../assets/hero.jpg"
+import {Link} from "react-router-dom"
 
 
 const Hero = () => {
@@ -16,7 +17,9 @@ const Hero = () => {
             </p>
 
             <div>
+                <Link to="/shop">
                     <button className="viewMore mt-5">View More</button>
+                </Link>
             </div>
         </div>
     

@@ -1,12 +1,12 @@
 import { ExploreDataSection } from "../Data"
 
-import ExploreData from "./ExploreData"
+import ExploreComponent from "./ExploreComponent"
 
 
 const Explore = () => {
 
     const exploreImage = ExploreDataSection.map((eachImage) =>{
-        return <ExploreData 
+        return <ExploreComponent
         key={eachImage.id}
         eachImage={eachImage}
         />

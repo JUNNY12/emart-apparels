@@ -11,19 +11,22 @@ import shoe1 from "./assets/shoe1.jpg"
 const ExploreDataSection = [{
         id: 1,
         image: shoes,
-        description: "SHOES"
+        description: "SHOES",
+        url:"/shoes"
     },
 
     {
         id: 2,
         image: cloths,
-        description: "CLOTHS"
+        description: "CLOTHS",
+        url:"/clothes"
     },
 
     {
         id: 3,
         image: accessories,
-        description: "ACCESSORIES"
+        description: "ACCESSORIES",
+        url:"/accessories"
     }
 ]
 

@@ -1,5 +1,6 @@
 import { GalleryDataSection } from "../Data";
 import GalleryData from "./GalleryData";
+import { Link } from "react-router-dom";
 
 
 
@@ -22,7 +23,9 @@ const HomeGallery = () => {
             <div className="galleryWrapper px-5 mb-4">{galleryItems}</div>
 
             <div className="text-center">
-                <button className="btnDiscover fw-bold">Discover More</button>
+                <Link to="/insights">
+                     <button className="btnDiscover fw-bold">Discover More</button>
+                </Link>
             </div>
         </div>
     )

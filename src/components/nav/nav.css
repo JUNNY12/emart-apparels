@@ -14,24 +14,27 @@
 
 .navList{
     list-style-type: none;
-    font-size: 0.7rem;
+    font-size: 1rem;
+}
+
+.link{
+    text-decoration: none;
+    color: #808080;
 }
 
 .navLink{
-    text-decoration: none;
     float: left;
     margin-right: 1.2rem;
-    color: #808080;
     list-style: none;
 }
 
-.navLink:hover{
+.link:hover{
     color: #808080;
 }
 
 .logoName h1{
     margin-left: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 4px;
 }
@@ -41,16 +44,19 @@
     position: absolute;
     right: 3%;
     display: none;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width:768px) {
     .navStyle{
         flex-direction: column;
+       padding: 2.5rem 0 2.5rem 0;
     }
 
     .navLink{
         float: none;
         display: block;
+        padding: 1rem 0 1rem 0;
     }
 
     .logoName{
@@ -69,5 +75,10 @@
     .showNav{
         display: block;
         padding-top: 2rem;
+        font-size: 1rem;
     }
+}
+
+.active{
+    border-bottom: 3px solid #808080;
 }

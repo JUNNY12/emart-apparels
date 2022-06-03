@@ -1,23 +1,20 @@
 import { Container, Row , Col } from "react-bootstrap"
-import Nav from "../../components/nav/Nav"
-import Header from "./ShoppingCart-header"
+
 import SignInForm from "../../components/signinform/SignInForm"
-import Footer from "../../components/footer/Footer"
+
 
 
 const SignIn = () => {
     return(
         <div>
-            <div><Nav /></div>
-            <div><Header /></div>
             <Container className="mb-5">
                 <Row>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <div>
                             <h1> Join us Or Sign In</h1>
                             <h6 className="mb-3">Store / Sign In</h6>
 
-                            <p className="trackPara">
+                            <p className="">
                                 Keep track of your next orders, expedite checkout, 
                                 and sync your favorites. Simply enter your email address, 
                                 and we'll give you a unique link to automatically sign you in.
@@ -25,7 +22,7 @@ const SignIn = () => {
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col sm={12} md={6}>
                         <div>
                             <SignInForm />
                         </div>
@@ -33,7 +30,6 @@ const SignIn = () => {
                 </Row>
             </Container>
 
-            <div><Footer /></div>
         </div>
     )
 }

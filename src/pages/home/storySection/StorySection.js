@@ -1,4 +1,4 @@
-import { Container, Row , Col } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import storyImage from "../assets/storyImage.jpg"
 
 
@@ -20,7 +20,9 @@ const StorySection = () => {
                     After all, our ultimate purpose is to make the world a better place.
                 </p>
 
-                <button className="btnDiscover">DISCOVER</button>
+               <Link to="/shop">
+                    <button className="btnDiscover">DISCOVER</button>
+               </Link>
             </div>
         
             <div className="storyImage">

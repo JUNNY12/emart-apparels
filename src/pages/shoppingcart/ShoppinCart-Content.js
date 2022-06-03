@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap"
+import {Link} from "react-router-dom"
 
 
 const ShoppingCartContent = () => {
@@ -19,9 +20,9 @@ const ShoppingCartContent = () => {
                             <h3 className="fs-5 mb-4">Your Shopping Cart is Empty</h3>
 
                             <div className="mb-3">
-                                <a href="/shop">
+                                <Link to="/shop">
                                      <button className="browseBtn">Browse Store</button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </Col>

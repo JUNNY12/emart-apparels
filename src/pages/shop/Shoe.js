@@ -1,5 +1,5 @@
-import ShoppingCartNav from "../shoppingcart/ShoppingCart-Nav"
-import Header from "../shoppingcart/ShoppingCart-header"
+import ShoppingCartNav from "../../components/shoppingCartNav/ShoppingCart-Nav"
+import Header from "../../components/shoppingCartNav/ShoppingCart-header"
 import ShoeContent from "./ShoeContent"
 
 

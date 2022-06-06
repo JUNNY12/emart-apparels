@@ -1,5 +1,3 @@
-import Nav from "../../components/nav/Nav"
-import Footer from "../../components/footer/Footer"
 import Hero from "./hero/Hero"
 import Explore from "./exploreSection/ExploreSection"
 import StorySection from "./storySection/StorySection"

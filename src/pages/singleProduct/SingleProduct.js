@@ -1,12 +1,13 @@
 import "./singleProduct.css"
 import ProductData from "../../ProductData"
-import { Link, useParams, useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 
 
 const SingleProduct = () => {
 
     const location = useLocation()
+
     const itemId= location.pathname.split("/")[2]
 
     const items= ProductData.find((item) => {

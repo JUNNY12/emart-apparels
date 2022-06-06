@@ -1,20 +1,25 @@
-.signInBtn{
-    border: none;
-    outline: none;
+.signInForm{
+    margin-top: 9rem;
+    padding: 0 20% 7% 20%;
+}
+
+.inputs {
     width: 100%;
-    padding: 8px;
-    background: #2e2e2e;
-    color: #ffffffff;
-}
-
-.signInput{
-    background: #b5abab;
-    border-radius: 0px;
-}
-
-.signInput:focus{
+    margin-bottom: 2rem;
+    height: 2.5rem;
     border: none;
     outline: none;
-    background: #b5abab;
-    box-shadow: 1px 1px 1px 1px #2e2e2e;
+    background: #626060;
+}
+
+.inputs:focus {
+    border-left: 4px solid #2e2e2e;
+}
+
+.signUpLink{
+    color: #2e2e2e;
+}
+
+.signUpLink:hover{
+    color: #2e2e2e;
 }

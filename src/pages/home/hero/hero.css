@@ -32,6 +32,31 @@
 }
 
 
+.buttonContainer{
+    display: flex;
+    gap: 10%;
+}
+
+.signUpBtn{
+    border: none;
+    outline: none;
+    background: #2e2e2e;
+    color: #ffffff;
+    font-weight: bold;
+    width: 7rem;
+    border-radius: 4px;
+}
+
+.signInBtn{
+    border: 1px solid #2e2e2e;
+    outline: none;
+    background: #ffffff;
+    color: #2e2e2e;
+    font-weight: bold;
+    width: 7rem;
+    border-radius: 4px;
+}
+
 @media screen and (max-width:768px) {
     .heroWrapper{
         max-width: 100vh;

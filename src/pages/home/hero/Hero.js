@@ -16,11 +16,18 @@ const Hero = () => {
                 Our organic and fairtrade clothing ensures that you look good.
             </p>
 
-            <div>
-                <Link to="/shop">
-                    <button className="viewMore mt-5">View More</button>
-                </Link>
-            </div>
+            <div className="buttonContainer">
+                <div>
+                    <Link to="/signUp">
+                        <button className="signUpBtn p-2">Sign Up</button>
+                    </Link>     
+                </div>  
+
+                <div> 
+                    <Link to={`/signIn`}>
+                        <button className="signInBtn p-2" >Sign In</button>
+                    </Link></div>
+                </div>
         </div>
     
         <div className="heroWrapper">

@@ -32,12 +32,6 @@ const ShoppingCartNav = () => {
                         </li>
                    </Link>
 
-                    <Link to="/shop/signin">
-                        <li className="text-center">
-                            <div className="shoppingIcon"><i class="fa-solid fa-user"></i></div>
-                            <div className="hideText">Sign In</div>
-                        </li>
-                    </Link>
                 </ul>
             </nav>
 

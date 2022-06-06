@@ -8,7 +8,6 @@ import Contact from "./pages/contact/Contact"
 import ShoppingCart from "./pages/shoppingcart/ShoppingCart"
 import About from "./pages/about/About"
 import TrackOrders from "./pages/shoppingcart/TrackOrders";
-import SignIn from "./pages/shoppingcart/SignIn";
 import Favorite from "./pages/shoppingcart/Favourites";
 import Shoes from "./pages/shop/Shoe";
 import Accessories from "./pages/shop/Accessories";
@@ -17,6 +16,8 @@ import SharedLayout from "./components/sharedLayout/SharedLayout";
 import SharedShopNav from "./components/sharedLayout/SharedShopNav";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
 import SingleProduct from "./pages/singleProduct/SingleProduct";
+import SignUpForm from "./components/forms/SignUpForm";
+import SignInForm from "./components/forms/SignInForm";
 
 
 const App = () => {
@@ -29,6 +30,8 @@ const App = () => {
                 
                   <Route index element= {<Home />} />
                   <Route path="*" element={<PageNotFound />} />
+                  <Route path="signUp" element={<SignUpForm />} />
+                  <Route path="signIn" element={<SignInForm />} />
 
                   <Route path="shop" element={<SharedShopNav />}>
                       <Route index element={<Shop />}/>
@@ -36,7 +39,6 @@ const App = () => {
                       <Route path="accessories" element={<Accessories />} />
                       <Route path="clothes" element={<Clothes />} />
                       <Route path="trackorders" element={<TrackOrders />} />
-                      <Route path="signin"  element={<SignIn />}/>
                       <Route path="favorite" element={<Favorite />} />
                       <Route path="cart" element={<ShoppingCart />} />
                       <Route path=":itemId"  element={<SingleProduct />}/>

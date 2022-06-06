@@ -1,26 +1,34 @@
-import { Form } from "react-bootstrap";
 import "./signinform.css"
+import { Link } from "react-router-dom"
 
 
 const SignInForm = () => {
     return (
-        <div>
-            <Form>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" className="signInput" />
-                </Form.Group>
+        <div className="signInForm">
 
-                <button  type="submit" className="signInBtn my-3 fw-bold">
-                   Get Sign-In Link
-                </button>
-            </Form>
+            <div className="text-center fs-1 fw-bold">SIGN IN</div>
+            <form>
 
             <div>
-                <p>
-                  If you don't already have an account, one will be created for you.
-                </p>
+                <label htmlFor="username">UserName</label> <br />
+                <input type="text" id="username" required class="inputs"/>
             </div>
+
+            <div>
+                <label htmlFor='password'>Password</label> <br />
+                <input type="password" id="password" required class="inputs" />
+            </div>
+
+            <div className="text-center">
+                <span className="me-2 fst-italic fw-bold fs-6">Dont have an Account Yet?</span>
+                <span className="fw-bold fs-4">
+                    <Link to={`/signUp`} className="signUpLink">Sign Up</Link>
+                </span>
+            </div>
+
+
+
+            </form>
         </div>
     )
 }

@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 
 const HomeGallery = () => {
 
-    const galleryItems = GalleryDataSection.map((item) => {
+    const galleryItems = GalleryDataSection.map((galleryItem) => {
         return <GalleryData 
-         key={item.id}
-         item={item}
+         key={galleryItem.id}
+         galleryItem={galleryItem}
         />
     })
     

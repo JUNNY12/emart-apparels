@@ -47,6 +47,13 @@
     gap: 3rem;
 }
 
+.moreInfoBtn{
+    border: 1px solid #2e2e2e;
+    outline: none;
+    color: #2e2e2e; 
+    background: #ffffff;
+    border-radius: 3px;
+}
 
 @media screen and (max-width:768px) {
     .productNav{

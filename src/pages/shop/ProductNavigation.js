@@ -13,7 +13,7 @@ const ProductNavigation = () => {
             <div className="productNavWrapper mb-4">
                 <img src = {cloths}/>
 
-                <Link to="/clothes">
+                <Link to="/shop/clothes">
                     <button className="productBtn">
                         CLOTHES
                     </button>
@@ -23,7 +23,7 @@ const ProductNavigation = () => {
 
             <div className="productNavWrapper mb-4">
                 <img src = {shoes}/>
-                <Link to="/shoes">
+                <Link to="/shop/shoes">
                     
                     <button className="productBtn">
                         SHOES
@@ -34,7 +34,7 @@ const ProductNavigation = () => {
 
             <div className="productNavWrapper mb-4">
                 <img src = {accessories}/>
-               <Link to="/accessories">
+               <Link to="/shop/accessories">
                     <button className="productBtn">
                         ACCESSORIES
                     </button>

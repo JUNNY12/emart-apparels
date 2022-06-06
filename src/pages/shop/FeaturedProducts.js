@@ -1,13 +1,14 @@
 import ProductData from "../../ProductData";
 import ProductComponent from "./ProductComponent";
 
+
 const FeatureProducts = () => {
 
 
-    const ProductItem = ProductData.map((eachItem) => {
+    const ProductItem = ProductData.map((item) => {
         return <ProductComponent 
-        key ={eachItem.id}
-        eachItem={eachItem}
+        key ={item.id}
+        item={item}
         />
     })
     return(

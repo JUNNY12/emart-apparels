@@ -15,6 +15,8 @@ import Accessories from "./pages/shop/Accessories";
 import Clothes from "./pages/shop/Clothes";
 import SharedLayout from "./components/sharedLayout/SharedLayout";
 import SharedShopNav from "./components/sharedLayout/SharedShopNav";
+import PageNotFound from "./components/pageNotFound/PageNotFound";
+import SingleProduct from "./pages/singleProduct/SingleProduct";
 
 
 const App = () => {
@@ -24,24 +26,25 @@ const App = () => {
 
           <Routes>
               <Route path="/" element={<SharedLayout />}>
-
+                
                   <Route index element= {<Home />} />
+                  <Route path="*" element={<PageNotFound />} />
 
                   <Route path="shop" element={<SharedShopNav />}>
                       <Route index element={<Shop />}/>
+                      <Route path="shoes" element={<Shoes />} />
+                      <Route path="accessories" element={<Accessories />} />
+                      <Route path="clothes" element={<Clothes />} />
                       <Route path="trackorders" element={<TrackOrders />} />
                       <Route path="signin"  element={<SignIn />}/>
                       <Route path="favorite" element={<Favorite />} />
                       <Route path="cart" element={<ShoppingCart />} />
+                      <Route path=":itemId"  element={<SingleProduct />}/>
                   </Route>
-  
+
                   <Route path="about" element = {<About />} />
                   <Route path ="insights" element ={<Insights />} />
                   <Route path="contact" element ={<Contact />} />      
-                  <Route path="shoes" element={<Shoes />} />
-                  <Route path="accessories" element={<Accessories />} />
-                  <Route path="clothes" element={<Clothes />} />
-
               </Route>
              
           </Routes>

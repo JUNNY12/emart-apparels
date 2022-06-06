@@ -1,0 +1,47 @@
+.singleProduct{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+
+.singleImageContainer{
+    max-width:30rem ;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.singleImageContainer>img{
+    width: 100%;
+    height: 100%;
+}
+
+.addToCartBtn{
+    border: none;
+    outline: none;
+    width: 100%;
+    background:#ffffff;
+    color: #2e2e2e;
+    border: 1px solid #2e2e2e;   
+}
+
+.favoriteBtn,
+.backBtn{
+    border: none;
+    outline: none;
+    width: 9rem;
+    color: #ffffff; 
+    background: #2e2e2e;
+}
+
+.shareIcons{
+    display: flex;
+    gap: 10%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .singleProduct{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

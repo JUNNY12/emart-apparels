@@ -1,5 +1,4 @@
 import "./hero.css"
-import { Container,Row, Col } from "react-bootstrap"
 import heroImage from "../assets/hero.jpg"
 import {Link} from "react-router-dom"
 

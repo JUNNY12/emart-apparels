@@ -1,5 +1,4 @@
 import { Container, Row , Col } from "react-bootstrap"
-import SignIn from "../../components/forms/SignInForm"
 
 
 const TrackOrders = () => {
@@ -23,12 +22,6 @@ const TrackOrders = () => {
                                     and we'll give you a unique link to automatically sign you in.
                                </p>
                            </div>
-                        </Col>
-
-                        <Col sm={12} md={6}>
-                            <div>
-                                <SignIn />
-                            </div>
                         </Col>
                     </Row>
                 </Container>

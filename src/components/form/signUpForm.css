@@ -51,6 +51,12 @@ label{
 }
 
 
+.success{
+    color: #008000;
+    font-size: clamp(1rem, 1.5vh, 2rem);
+}
+
+
 @media screen and (max-width:786px) {
   
     .groupedInputs {

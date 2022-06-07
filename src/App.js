@@ -16,11 +16,16 @@ import SharedLayout from "./components/sharedLayout/SharedLayout";
 import SharedShopNav from "./components/sharedLayout/SharedShopNav";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
 import SingleProduct from "./pages/singleProduct/SingleProduct";
-import SignUpForm from "./components/forms/SignUpForm";
-import SignInForm from "./components/forms/SignInForm";
+import SignUpForm from "./components/form/SignUpForm";
+import SignInForm from "./components/form/SignInForm";
+import { useState } from "react";
+import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
 
 
 const App = () => {
+
+  const [user, setUser] = useState(null)
+
   return (
     <div>
         <BrowserRouter>
@@ -31,10 +36,20 @@ const App = () => {
                   <Route index element= {<Home />} />
                   <Route path="*" element={<PageNotFound />} />
                   <Route path="signUp" element={<SignUpForm />} />
-                  <Route path="signIn" element={<SignInForm />} />
+                  <Route path="signIn" element={<SignInForm 
+                    setUser={setUser}>
+                    </SignInForm>} 
+                  />
 
                   <Route path="shop" element={<SharedShopNav />}>
-                      <Route index element={<Shop />}/>
+                      <Route index element= {
+
+                        <ProtectedRoute user={user}>
+                            <Shop user={user}/>
+                        </ProtectedRoute>
+                       }
+                    />
+
                       <Route path="shoes" element={<Shoes />} />
                       <Route path="accessories" element={<Accessories />} />
                       <Route path="clothes" element={<Clothes />} />

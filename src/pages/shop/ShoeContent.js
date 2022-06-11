@@ -18,7 +18,7 @@ const ShoeContent = () => {
         <div className="shoeContent mb-5">
             <div className="px-5 mb-3">
                  <h1>Shoes</h1>
-                <h6 className="mb-3">Store / Shoes</h6>
+                <h6 className="mb-3">Shop / Shoes</h6>
 
                  <p>
                      We are always on the lookout for fashionable, 

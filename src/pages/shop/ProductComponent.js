@@ -1,9 +1,13 @@
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ProductData from "../../ProductData";
+
 
 
 
 const ProductComponent= (props) => {
+
+    
     return(
         <div className="productCard mb-4">
             <Card style={{ width: '' }}>

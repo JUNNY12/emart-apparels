@@ -1,7 +1,6 @@
 import "./nav.css"
 import { NavLink } from "react-router-dom"
-import { useState } from "react"
-import { useEffect } from "react"
+import { useState, useEffect} from "react"
 import { useLocation } from "react-router-dom"
 
 
@@ -22,7 +21,7 @@ const Nav = () => {
 
     return (
         <div>
-            <nav className="navStyle">
+            <nav className="navStyle" >
                 <div className="logoName">
                     <h1>Emart-Apparels</h1>
                 </div>

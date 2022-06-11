@@ -39,6 +39,10 @@
     cursor: pointer;
 }
 
+.cartMessage{
+    color: #008000;
+}
+
 @media screen and (max-width:768px) {
     .singleProduct{
         grid-template-columns: repeat(1, 1fr);

@@ -2,7 +2,7 @@ import "./singleProduct.css"
 import ProductData from "../../ProductData"
 import { Link, useLocation } from "react-router-dom"
 import {useCart } from "react-use-cart";
-
+import { useState } from "react";
 
 
 const SingleProduct = () => {
@@ -15,8 +15,10 @@ const SingleProduct = () => {
     })
 
     const {image , price, description} = items
-
     const {addItem} = useCart()
+
+    const [cartMessage, setCartMessage] = useState("")
+
 
   return (
     <div className='singleProduct px-5 pb-5 mt-5'>
@@ -32,13 +34,19 @@ const SingleProduct = () => {
             <span>{price}</span>
           </h2>
 
-          <div>
-            <button className="addToCartBtn p-2 fw-bold" onClick={()=> addItem(items)}>Add To Cart</button>
+          <div className="mb-2">
+            <button className="addToCartBtn p-2 fw-bold" onClick={()=> {addItem(items)
+            setCartMessage("Added to cart")
+            }}>Add To Cart</button>
           </div>
+
+          <div className="cartMessage fw-bold">{cartMessage}</div>
 
           <div className="my-4">
             <div className="fw-bold fs-3">Save This Product For Later</div>
-            <button className="favoriteBtn p-2">
+            <button className="favoriteBtn p-2"
+            
+            >
               <span className="me-2"><i class="fa-solid fa-heart"></i></span>
               <span>Favorite</span>
             </button>

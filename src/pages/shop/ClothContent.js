@@ -20,7 +20,7 @@ const ClothContent = () => {
         <div className="clothContent">
             <div className="px-5">
                  <h1>Clothes</h1>
-                <h6 className="mb-3">Store / Clothes</h6>
+                <h6 className="mb-3">Shop / Clothes</h6>
 
                  <p>
                      We are always on the lookout for fashionable, 

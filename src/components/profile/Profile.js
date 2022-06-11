@@ -18,8 +18,7 @@ const Profile = () => {
           
         </div>
 
-
-        {/* <div className="profileBox">
+        {/* <div className="profileBox p-2">
             <div>View Profile</div>
             <div>Sign Out</div>
         </div> */}

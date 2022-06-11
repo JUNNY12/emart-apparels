@@ -28,7 +28,7 @@ const App = () => {
   const [user, setUser] = useState(null)
 
   return (
-    <div>
+    <>
         <CartProvider>
         <BrowserRouter>
 
@@ -69,7 +69,7 @@ const App = () => {
 </Routes>
 </BrowserRouter>
 </CartProvider>
-    </div>
+    </>
   )
 }
 

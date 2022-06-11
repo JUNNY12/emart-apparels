@@ -6,7 +6,7 @@ const Cart = () => {
 
     const{
     isEmpty,
-    totalUniqueItems,
+    totalItems,
     cartTotal,
     items,
     emptyCart,
@@ -29,6 +29,10 @@ const Cart = () => {
 
   return (
     <div className="px-5 mb-5">
+        <div className="mb-3 fw-bold">
+            <span className="me-1">Toatal Items:</span>
+            <span>{totalItems}</span>
+        </div>
         <Table striped hover responsive>
           <thead>
             <tr>

@@ -18,7 +18,7 @@ const AccessoriesContent = () => {
         <div className="accessoriesContent">
             <div className="px-5 mb-3">
                  <h1>Clothes</h1>
-                <h6 className="mb-3">Store / Accessories</h6>
+                <h6 className="mb-3">Shop / Accessories</h6>
 
                  <p>
                      We are always on the lookout for fashionable, 

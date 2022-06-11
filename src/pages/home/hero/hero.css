@@ -60,6 +60,7 @@
 @media screen and (max-width:768px) {
     .heroWrapper{
         max-width: 100vh;
+        height: auto;
     }
 
     .hero{

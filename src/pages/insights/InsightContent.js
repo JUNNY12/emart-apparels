@@ -17,7 +17,7 @@ const InsightContent = () => {
     return(
         <div>
 
-            <div className="my-5 text-center insightHeader">
+            <div className="my-5 px-3 text-center insightHeader">
                 <h1>Take a peek at what we've discovered...</h1>
                 <h6>Take a look at the inspiring gallery we put together from our community.</h6>
             </div>

@@ -22,9 +22,17 @@
 
 
 .profileContainer{
-    position: relative;
     cursor: pointer;
 }
+
+.profileBox{
+    margin-top: 2rem;
+    position: absolute;
+    z-index: 1;
+    background: gray;
+    color: black;
+    }
+
 
 
 @media screen and (max-width:620px) {

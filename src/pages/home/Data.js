@@ -12,21 +12,21 @@ const ExploreDataSection = [{
         id: 1,
         image: shoes,
         description: "SHOES",
-        url:"/shoes"
+        url:"/shop"
     },
 
     {
         id: 2,
         image: cloths,
         description: "CLOTHS",
-        url:"/clothes"
+        url:"/shop"
     },
 
     {
         id: 3,
         image: accessories,
         description: "ACCESSORIES",
-        url:"/accessories"
+        url:"/shop"
     }
 ]
 

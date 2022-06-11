@@ -7,7 +7,7 @@ const ClothComponent= (props) => {
     return(
         <div className="productCard mb-4">
 
-           {props.item.isCloth && 
+           {props.item.isCloth &&
             <Card>
                 <Card.Img style={{height:'18rem'}} variant="top" src={props.item.image} />
                 <Card.Body>

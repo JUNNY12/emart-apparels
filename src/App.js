@@ -19,6 +19,7 @@ import SingleProduct from "./pages/singleProduct/SingleProduct";
 import SignUpForm from "./components/form/SignUpForm";
 import SignInForm from "./components/form/SignInForm";
 import { useState } from "react";
+import { CartProvider } from "react-use-cart";
 import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
 
 
@@ -28,44 +29,46 @@ const App = () => {
 
   return (
     <div>
+        <CartProvider>
         <BrowserRouter>
 
-          <Routes>
-              <Route path="/" element={<SharedLayout />}>
-                
-                  <Route index element= {<Home />} />
-                  <Route path="*" element={<PageNotFound />} />
-                  <Route path="signUp" element={<SignUpForm />} />
-                  <Route path="signIn" element={<SignInForm 
-                    setUser={setUser}>
-                    </SignInForm>} 
-                  />
+<Routes>
+    <Route path="/" element={<SharedLayout />}>
+      
+        <Route index element= {<Home />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="signUp" element={<SignUpForm />} />
+        <Route path="signIn" element={<SignInForm 
+          setUser={setUser}>
+          </SignInForm>} 
+        />
 
-                  <Route path="shop" element={<SharedShopNav />}>
-                      <Route index element= {
+        <Route path="shop" element={<SharedShopNav />}>
+            <Route index element= {
 
-                        <ProtectedRoute user={user}>
-                            <Shop user={user}/>
-                        </ProtectedRoute>
-                       }
-                    />
+                <ProtectedRoute user={user}>
+                  <Shop user={user}/>
+                </ProtectedRoute>
+             }
+          />
 
-                      <Route path="shoes" element={<Shoes />} />
-                      <Route path="accessories" element={<Accessories />} />
-                      <Route path="clothes" element={<Clothes />} />
-                      <Route path="trackorders" element={<TrackOrders />} />
-                      <Route path="favorite" element={<Favorite />} />
-                      <Route path="cart" element={<ShoppingCart />} />
-                      <Route path=":itemId"  element={<SingleProduct />}/>
-                  </Route>
+            <Route path="shoes" element={<Shoes />} />
+            <Route path="accessories" element={<Accessories />} />
+            <Route path="clothes" element={<Clothes />} />
+            <Route path="trackorders" element={<TrackOrders />} />
+            <Route path="favorite" element={<Favorite />} />
+            <Route path="cart" element={<ShoppingCart />} />
+            <Route path=":itemId"  element={<SingleProduct />}/>
+        </Route>
 
-                  <Route path="about" element = {<About />} />
-                  <Route path ="insights" element ={<Insights />} />
-                  <Route path="contact" element ={<Contact />} />      
-              </Route>
-             
-          </Routes>
-        </BrowserRouter>
+        <Route path="about" element = {<About />} />
+        <Route path ="insights" element ={<Insights />} />
+        <Route path="contact" element ={<Contact />} />      
+    </Route>
+   
+</Routes>
+</BrowserRouter>
+</CartProvider>
     </div>
   )
 }

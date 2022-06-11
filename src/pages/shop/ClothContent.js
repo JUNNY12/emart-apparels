@@ -12,6 +12,7 @@ const ClothContent = () => {
           key ={item.id}
           item={item}
           />
+          
       })
       
 

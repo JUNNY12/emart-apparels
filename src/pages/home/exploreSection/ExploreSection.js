@@ -3,6 +3,7 @@ import { ExploreDataSection } from "../Data"
 import ExploreComponent from "./ExploreComponent"
 
 
+
 const Explore = () => {
 
     const exploreImage = ExploreDataSection.map((eachImage) =>{
@@ -28,7 +29,7 @@ const Explore = () => {
                      {exploreImage}
                 </div>
 
-           </div>
+           </div> 
                  
 
         </div>

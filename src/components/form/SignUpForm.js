@@ -1,6 +1,6 @@
 import "./signUpForm.css"
 import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 
 
@@ -10,6 +10,7 @@ import { useState } from "react"
 const SignUpForm = () => {
 
     const [successMessage, setSuccessMessage] = useState("")
+    const [passwordError, setPasswordError] =useState("")
 
     const[formData, setFormData] = useState(
         {
@@ -36,11 +37,18 @@ const SignUpForm = () => {
         
     }
 
+
+
     const handleSubmit = (event) => {
         event.preventDefault()
-        
+        if(formData.password !== formData.confirmpassword){
+            setPasswordError("Password Does Not Match")
+        }
+        else{
+            setSuccessMessage("Your Signing Up was Sucessful. You can Proceed To Sign In")
+        }
 
-        setSuccessMessage("Your Signing Up was Sucessful. You can Proceed To Sign In")
+      
       
         setFormData({
             username:"",
@@ -57,8 +65,6 @@ const SignUpForm = () => {
 
   return (
     <div className='signUpForm'>
-        <div className="text-center fw-bold fst-italic success">{successMessage}</div>
-       
         <div className='text-center fw-bold fs-1'>SIGN UP</div>
 
         <form onSubmit={handleSubmit}>
@@ -163,20 +169,24 @@ const SignUpForm = () => {
                     onChange={handleChange}
                     />
                 </div>
+                <div>{passwordError}</div>
+                <div>{passwordError}</div>
 
             </div>
+
+            <button class="signUp mb-3">Sign Up</button>
 
             <div className="text-center mb-3">
                 <span className="me-2 fst-italic fw-bold fs-6">Already a memeber?</span>
 
-                <span className="fw-bold fs-4">
+                <span className="fw-bold fs-6">
                     <Link to={`/signIn`} className="signInLink">
                         Sign In
                     </Link>
                 </span>
             </div>
 
-            <button class="signUp">Sign Up</button>
+            <div className="text-center fw-bold fst-italic success mt-2">{successMessage}</div>
         </form>
 
         

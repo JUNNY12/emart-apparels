@@ -46,6 +46,7 @@ const SignInForm = ({setUser}) => {
         {
             setErrorMessage("Username or Password is not Correct!!!")
         }
+
         else{
             navigate("/shop")
         }
@@ -88,9 +89,9 @@ const SignInForm = ({setUser}) => {
 
             <button class="signIn">Sign In</button>
 
-            <div className="text-center">
+            <div className="text-center mt-2">
                 <span className="me-2 fst-italic fw-bold fs-6">Don't have an Account Yet?</span>
-                <span className="fw-bold fs-4">
+                <span className="fw-bold fs-6">
                     <Link to={`/signUp`} className="signUpLink">Sign Up</Link>
                 </span>
             </div>

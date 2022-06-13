@@ -41,6 +41,14 @@
     box-shadow: 1px 1px 1px 1px #2e2e2e;
 }
 
+.errorSubmit{
+    color: #ff0000 ;
+}
+
+.submitMessage{
+    color: #008000;
+}
+
 @media screen and (max-width:768px) {
     .contactContainer {
         grid-template-columns: repeat(1, 1fr);

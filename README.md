@@ -1,10 +1,14 @@
-# Emart Apparels
+ # Emart Apparels
 
-A UI Design Website For Mens Cloth Shopping .
+A Website that allows men to shop for different items ranging from cloths, shoes and other acessories
 
 ## Technology Used
 
-React 
+* React Boostrap [https://react-bootstrap.github.io/]
+* FontAwesome Icons [https://fontawesome.com/]
+* React-use-cart to Provide Shopping Cart Functionality: [click here] (https://www.npmjs.com/package/react-use-cart)
+* Used LocalStorage for storing the Data
 
-React Boostrap
+### Live URL
 
+(VISIT) [https://emart-apparels.vercel.app/]

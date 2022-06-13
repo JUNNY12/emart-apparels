@@ -1,6 +1,6 @@
 import "./signUpForm.css"
 import { Link } from "react-router-dom"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 
 
@@ -46,6 +46,7 @@ const SignUpForm = () => {
         }
         else{
             setSuccessMessage("Your Signing Up was Sucessful. You can Proceed To Sign In")
+            setPasswordError("")
         }
 
       
@@ -169,8 +170,7 @@ const SignUpForm = () => {
                     onChange={handleChange}
                     />
                 </div>
-                <div>{passwordError}</div>
-                <div>{passwordError}</div>
+                <div className="mb-2 passwordError">{passwordError}</div>
 
             </div>
 

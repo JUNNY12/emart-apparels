@@ -34,15 +34,17 @@ const ContactForm = () => {
 
         if(
            contactFormData.contactfirstname ==="" 
-           && contactFormData.contactlastname ===""
-           && contactFormData.contactemail==="" 
-           && contactFormData.contactmessage === "")
+           || contactFormData.contactlastname ===""
+           || contactFormData.contactemail==="" 
+           || contactFormData.contactmessage === "")
            {
             setErrorSubmit("All input field must be filled!!!")
+            setSubmitMessage("")
         }
 
         else{
             setSubmitMessage("Your Message Has been Sent. We will contact you Shortly. Thank You")
+            setErrorSubmit("")
         }
 
         setContactFormData( 
@@ -63,6 +65,9 @@ const ContactForm = () => {
             <div>
                 <h1 className="mb-4 fs-3 text-center">Get In Touch With US</h1>
             </div>
+
+            <div className="errorSubmit text-center fst-italic">{errorSubmit}</div>
+            <div className="submitMessage text-center fst-italic">{submitMessage}</div>
 
             <div>
             <Form onSubmit={handleContactFormSubmit}>

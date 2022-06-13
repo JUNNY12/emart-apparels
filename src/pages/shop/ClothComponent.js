@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 
 const ClothComponent= (props) => {
-
     return(
         <div className="productCard mb-4">
 

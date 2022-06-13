@@ -1,12 +1,13 @@
 import "./nav.css"
 import { NavLink } from "react-router-dom"
-import { useState, useEffect} from "react"
+import { useState, useEffect, useRef} from "react"
 import { useLocation } from "react-router-dom"
 
 
 
 
 const Nav = () => {
+
 
     const [isOpen, setIsOpen] = useState(true)
     const {pathname} = useLocation()
@@ -21,7 +22,7 @@ const Nav = () => {
 
     return (
         <div>
-            <nav className="navStyle" >
+            <nav className="navStyle">
                 <div className="logoName">
                     <h1>Emart-Apparels</h1>
                 </div>

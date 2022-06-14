@@ -49,6 +49,7 @@ const SignInForm = ({setUser}) => {
         if(signInData.username !== username && signInData.signInPassword !== password)
         {
             setErrorMessage("Username or Password is not Correct!!!")
+            setDetailsEmptyMessage("")
         }
 
         else{

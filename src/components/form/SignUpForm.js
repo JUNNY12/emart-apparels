@@ -1,5 +1,5 @@
 import "./signUpForm.css"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 
@@ -8,6 +8,8 @@ import { useState } from "react"
 
 
 const SignUpForm = () => {
+
+    const navigateToSignIn = useNavigate()
 
     const [successMessage, setSuccessMessage] = useState("")
     const [passwordError, setPasswordError] =useState("")
@@ -41,6 +43,7 @@ const SignUpForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
+
         if(formData.password !== formData.confirmpassword){
             setPasswordError("Password Does Not Match")
         }
@@ -48,8 +51,6 @@ const SignUpForm = () => {
             setSuccessMessage("Your Signing Up was Sucessful. You can Proceed To Sign In")
             setPasswordError("")
         }
-
-      
       
         setFormData({
             username:"",
@@ -61,6 +62,10 @@ const SignUpForm = () => {
             confirmpassword:""
         })
         localStorage.setItem("userDetails", JSON.stringify({...formData}))
+
+        setTimeout(() => {
+            navigateToSignIn("/signIn")
+        },2000)
     
     }
 

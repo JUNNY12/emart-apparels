@@ -1,5 +1,5 @@
 import "./nav.css"
-import { NavLink } from "react-router-dom"
+import { NavLink , Link } from "react-router-dom"
 import { useState, useEffect, useRef} from "react"
 import { useLocation } from "react-router-dom"
 
@@ -24,7 +24,9 @@ const Nav = () => {
         <div>
             <nav className="navStyle">
                 <div className="logoName">
-                    <h1>Emart-Apparels</h1>
+                    <Link to={`/`} className="link">
+                        <h1>Emart-Apparels</h1>
+                    </Link>
                 </div>
 
                 <ul className={isOpen? "navList" : "showNav"}>

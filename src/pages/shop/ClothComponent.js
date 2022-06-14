@@ -25,7 +25,8 @@ const ClothComponent= (props) => {
                         </div>
                     </Link>
                </Card.Body>
-            </Card>}
+            </Card>
+            }
 
         </div>
     )

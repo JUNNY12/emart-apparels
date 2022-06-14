@@ -1,6 +1,6 @@
  # Emart Apparels
 
-A Website that allows men to shop for different items ranging from cloths, shoes and other acessories
+A E-commerce Website that allows men to shop for different items ranging from cloths, shoes and other acessories
 
 ## Technology Used
 

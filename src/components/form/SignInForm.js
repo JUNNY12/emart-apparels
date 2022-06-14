@@ -22,6 +22,8 @@ const SignInForm = ({setUser}) => {
 
     const [errorMessage, setErrorMessage] = useState("")
 
+    const [detailsEmpty, setDetailsEmptyMessage] = useState("")
+
     const handleSignInDataChange = (event) => {
        event.preventDefault()
        const {name, value} = event.target
@@ -36,8 +38,10 @@ const SignInForm = ({setUser}) => {
 
     const handleSignInSubmit = (event) => {
         event.preventDefault()
-
         let details = JSON.parse(localStorage.getItem("userDetails"))
+        if (details === null) 
+        return setDetailsEmptyMessage("Account Does not Exist!!! You need to sign up")
+
         const {username, password} = details;
 
         setUser({username:username, password:password})
@@ -57,7 +61,7 @@ const SignInForm = ({setUser}) => {
     return (
         <div className="signInForm">
             <div className="text-center error fw-bold fst-italic">{errorMessage}</div>
-
+            <div className="text-center error fw-bold fst-italic">{detailsEmpty}</div>
             <div className="text-center fs-1 fw-bold">SIGN IN</div>
             <form onSubmit={handleSignInSubmit}>
 

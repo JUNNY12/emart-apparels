@@ -1,8 +1,17 @@
 import { useState } from "react"
 
+
+
 const Header = () => {
 
-    const getUsername = JSON.parse(localStorage.getItem("userDetails"))
+    const [userName, setUsername] = useState("")
+
+    const getUserDetails = JSON.parse(localStorage.getItem("userDetails"))
+
+    if (getUserDetails === null) 
+    return
+
+    const{username} = getUserDetails
     
     return(
         <div>
@@ -10,7 +19,7 @@ const Header = () => {
             <div className="shoppingCartHeader text-center mb-5 mt-5 px-2">
 
                 <div className="welcomeMessage fst-italic fw-bold mb-4">
-                    <h5>Welcome On Board {getUsername.username}</h5>
+                    <h5>Welcome On Board {username}</h5>
                 </div>
 
                 <h1 className="mb-3">

@@ -7,13 +7,22 @@ import ClothComponent from "./ClothComponent"
 
 const ClothContent = () => {
 
-    const clothItems = ProductData.map((item) => {
+    const clothItems = ProductData.filter(cloth => cloth?.isCloth === true).map((cloth) =>{
+        console.log(cloth)
+
         return  <ClothComponent 
-          key ={item.id}
-          item={item}
-          />
+        key ={cloth.id}
+        cloth={cloth}
+        />
+    })
+
+    // const clothItems = ProductData.map((item) => {
+    //     return  <ClothComponent 
+    //       key ={item.id}
+    //       item={item}
+    //       />
           
-      })
+    //   })
       
 
     return(

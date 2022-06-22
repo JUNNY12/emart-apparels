@@ -7,12 +7,13 @@ import AccessoriesComponent from "./AccessoriesComponent"
 
 const AccessoriesContent = () => {
 
-    const accessoriesItems = ProductData.map((item) => {
+    const accessoriesItems = ProductData.filter(accessory => accessory?.isAccessories === true).map((accessory) =>{
         return  <AccessoriesComponent 
-          key ={item.id}
-          item={item}
-          />
-      })
+        key ={accessory.id}
+        accessory={accessory}
+        />
+
+    })
 
     return(
         <div className="accessoriesContent">

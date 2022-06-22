@@ -7,16 +7,15 @@ const ShoeComponent= (props) => {
     return(
         <div className="productCard mb-4">
 
-           {props.item.isShoe &&
             <Card>
-                <Card.Img style={{height:'18rem'}} variant="top" src={props.item.image} />
+                <Card.Img style={{height:'18rem'}} variant="top" src={props.shoe.image} />
                 <Card.Body>
-                    <Card.Title className="text-center">{props.item.description}</Card.Title>
+                    <Card.Title className="text-center">{props.shoe.description}</Card.Title>
                     <Card.Text className="text-center fw-bold fs-4">
-                    <span>$</span> <span>{props.item.price}</span>
+                    <span>$</span> <span>{props.shoe.price}</span>
                     </Card.Text>
 
-                    <Link to={`/shop/${props.item.id}`}>
+                    <Link to={`/shop/${props.shoe.id}`}>
                         <div className="text-center">
                             <button className="moreInfoBtn">
                                 <span className="me-1 p-2 "> More Info</span>
@@ -25,7 +24,7 @@ const ShoeComponent= (props) => {
                         </div>
                     </Link>
                </Card.Body>
-            </Card>}
+            </Card>
 
         </div>
     )

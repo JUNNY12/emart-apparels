@@ -32,7 +32,7 @@ const App = () => {
   const [user, setUser] = useState(null)
 
   return (
-    <>
+    <div className="app">
         <CartProvider>
            <ScrollToTop />
            <Routes>
@@ -73,7 +73,7 @@ const App = () => {
           </Routes>  
 
         </CartProvider>
-    </>
+    </div>
   )
 }
 

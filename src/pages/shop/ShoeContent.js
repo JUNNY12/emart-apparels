@@ -7,12 +7,20 @@ import ShoeComponent from "./ShoeComponent"
 
 const ShoeContent = () => {
 
-    const shoeItems = ProductData.map((item) => {
+    const shoeItems = ProductData.filter(shoe => shoe?.isShoe === true).map((shoe) => {
+
         return  <ShoeComponent 
-          key ={item.id}
-          item={item}
+          key ={shoe.id}
+          shoe={shoe}
           />
-      })
+    }) 
+
+    // const shoeItems = ProductData.filter((item) => {
+    //     return  <ShoeComponent 
+    //       key ={item.id}
+    //       item={item}
+    //       />
+    //   })
 
     return(
         <div className="shoeContent mb-5">
